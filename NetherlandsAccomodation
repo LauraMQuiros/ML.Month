@@ -1,1 +1,5 @@
 
+cols = data.columns
+num_cols = data._get_numeric_data().columns
+categorical_feat = list(set(cols) - set(num_cols))
+sorted(categorical_feat)
