@@ -1,0 +1,10 @@
+- separate categorical from numerical
+  - some categorical data can be made numerical (e.g. matchCapacity)
+  - make categorical numerical using one-hot method
+- remove unwanted variables 
+  - URL, firstSeenAt, lastSeenAt are not useful
+  - longitude and latitude can be removed since postal code already has the neighbourhood info
+  - don't need both decriptions (only translated or original)
+  - processing on description to only retrieve the key words (NLP thing)
+- then somehow run some model - regression or something idk I didn't go to the NN lecture.
+  
